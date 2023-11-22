@@ -1,14 +1,20 @@
+import { MouseEventHandler } from 'react';
 import './ExploreContainer.css';
+import { IonButton } from '@ionic/react';
+import { Redirect } from 'react-router';
 
 interface ContainerProps {
   name: string;
 }
 
 const ExploreContainer: React.FC<ContainerProps> = ({ name }) => {
+
   return (
     <div id="container">
-      <strong>{name}</strong>
-      <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+      <strong>Home</strong>
+      <p>Pablo Prado</p>
+      <p>18002407</p>
+      <IonButton color="primary" href='/countries'>Load</IonButton>
     </div>
   );
 };
